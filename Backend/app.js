@@ -122,10 +122,10 @@ app.post('/users', async function(req, res) {
 		return;
 	}
 
-	if(!username.includes('kopo')){ // later, we have to mapping user id with our database for authentication
-		res.json(getErrorMessage('not a valid user'));
-		return;
-	}
+// 	if(!username.includes('kopo')){ // later, we have to mapping user id with our database for authentication
+// 		res.json(getErrorMessage('not a valid user'));
+// 		return;
+// 	}
 	var token = jwt.sign({
 		exp: Math.floor(Date.now() / 1000) + parseInt(hfc.getConfigSetting('jwt_expiretime')),
 		username: username,
