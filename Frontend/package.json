@@ -7,7 +7,7 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
-    "axios": "^0.21.2",
+    "axios": "^0.31.1",
     "chart.js": "^2.9.4",
     "echarts": "^5.5.1",
     "vue": "^2.6.10",
